@@ -1,2 +1,2 @@
-# Tecch-Degree-Project2
+# Tech-Degree-Project2
 Unit 2
