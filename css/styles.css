@@ -5,80 +5,275 @@
 }
 
 a {
+    text-decoration: none;
+}
+
+.main-nav a {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-a :hover {
-    color: rgb(146, 141, 141);
+a:hover {
+    color: rgb(162, 46, 175);
 }
 
-.flex {
-    display: flex;
+#portfolio {
+    text-transform: uppercase;
+    margin: 1em auto;
 }
 
-header {
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     
+    
+}
+
+
+
+header {
+    font-size: 1em;
+    background-color: rgb(125, 121, 175);
+    width: 100%;
 }
 
 .name {
-    
-    justify-content: space-around;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+ul {
+    margin-bottom: 0;
 }
 
 body {
+    
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Lato', sans-serif;
-    background-color: rgb(247, 241, 241);
+    background-color: rgb(244, 244, 244);
     text-align: center;
 }
 
 .nav {
     padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .nav li {
-    
-    justify-content: space-around;
-    background-color: #fff;
-    border: 2px solid #fff;
-    padding: 4px 0px;
+    background-color: rgb(223, 222, 228);
+    border-radius: 6px;
+    padding: 6px 0px;
     margin-bottom: 4px;
     text-align: center;
     list-style-type: none;
+    font-size: .75em;
+}
+
+.nav li:hover {
+    background-color: #fff;
+}
+
+.main-image {
+    height: 100%;
+    width: 100%;
+    margin: 2em auto;
+    padding-bottom: 1em;
+}
+
+.main-image img {
+    width: 70%;
+}
+
+.main-image p{
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+.portfolio-h2 {
+    font-weight: bolder;
     
 }
 
-.portfolio {
-
+#portfolio {
+    margin: 2em auto;
 }
+
+#portfolio,
+.project {
+    width: 90%;
+    align-self: center;
+    
+}
+
+#portfolio h2,
+.project h2 {
+    font-size: 1em;
+    margin: 1em auto 1em auto;
+}
+
+.project p {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+#portfolio img,
+.project img {
+    height: 70%;
+    width: 100%;
+}
+
+/* Footer Styles */
 
 footer {
-    background-color: bisque;
+    background-color: rgb(228, 226, 226);
+    padding: 2em 0 0 0;
+    margin-top: 2em;
+}
+
+.footer-nav li{
+    
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 1em;
+    
+}
+
+.footer-nav a {
+    color: rgb(121, 120, 120);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: rgb(162, 46, 175);
+}
+
+.footer-nav2 {
+    display: flex;
+    background-color: rgb(125, 121, 175);
+    padding: 1em;
+    margin-top: 2em;
 }
 
 
 
+footer ul {
+    padding-left: 0;
+}
+
+.footer-nav2 ul {
+    list-style-type: none;
+    align-self: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 
 
+.bottom-name {
+    margin-right: auto;
+}
+
+
+footer p{
+    text-align:  center;
+    padding: 1em;
+}
 
 
 /* Media Queries */
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
 
+    P {
+        font-size: 1.25em;
+    }
+
+    .project h2 {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding-bottom: 1em;
+    }
+     
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content:  space-between;
+    }
+
+    .nav li {
+      background-color:rgb(125, 121, 175);
+      padding: 1em;
+      font-size: 1em
+    }
+
+    .main-image {
+      display: flex;
+      width: 90%;
+    }
+
+    .main-image img {
+        width: 35%;
+    }
+
+    .main-image p {
+        order: -1;
+        text-align: left;
+        margin-top: 0;
+        margin-right: 1em;
+        padding-right: 1em;
+        
+    }
+
+    .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1
+    
+    }
+
+    .project {
+    width: 45%;
+    margin-right: .25em;
+    margin-left: .25em;
+    }
 
 }
 
+
 @media (min-width: 1024px) {
+   .nav-line {
+       display: flex;
+   }
 
+   .name {
+       margin-right: auto;
+       margin-left: 2em;
+   }
 
+   .nav {
+       flex-wrap: nowrap;
+       padding-top: 2em;
+       margin-top: 0;
+       margin-right: 2.5em;
+   }
+
+   .project {
+       width: 30%;
+       margin-right: .5em;
+       margin-left: .5em;
+   }
 }

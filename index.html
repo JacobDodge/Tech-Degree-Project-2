@@ -5,83 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato,Montserrat:400,500,700,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
-   <header class="flex">
-       <h1 class="name flex">Jacob Dodge</h1>
-       <nav class="main-nav">
-            <ul class="nav">
-                <a href="index.html"><li>Home</li></a>
-                <a href="#portfolio"><li>Portfolio</li></a>
-                <a href="#contact"><li>Contact</li></a>
-            </ul>
-        </nav>
-        
+   <header>
+        <div class="nav-line">
+            <h1 class="name">Jacob Dodge</h1>
+             <nav class="main-nav">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-image">
+                <img src="images/responsive-layout-profile.png" alt="Cartoon picture of a person">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae in ratione debitis minus maiores laborum dolorem quaerat, necessitatibus aperiam laboriosam deserunt natus animi quis ex rem quae consequuntur consectetur?</p>
+        </div>
+
    </header>
 
-   <div class="main-image">
-        <img src="images/responsive-layout-profile.png" alt="Cartoon picture of a person">
-        <p>Hi, I am a front end developer that loves responsive design and css.
-                I recently finished front end web development at treehouse and I am excited to put my skills to use. 
-        </p>
-   </div>
    
 
 <main>
 
-    <div>
-        <h2>Portfolio</h2>
+  <div class="container">
+
+    <div id="portfolio">
+        <h2 class="portfolio-h2">Portfolio</h2>
+        
+    </div>
+
+    <div class="project">
         <img src="images/portfolio-1.png" alt="">
+        <h2>Marketing Page</h2>
+        <p>This is just some text</p>
+        
         
     </div>
 
-    <div>
-        <h2>Portfolio</h2>
+        
+    <div class="project">
         <img src="images/portfolio-2.png" alt="">
+        <h2>Search Page</h2>
         <p>This is just some text</p>
-    </div>
-
         
-    <div>
-        <h2>Portfolio</h2>
+        
+    </div>
+
+    <div class="project">
         <img src="images/portfolio-3.png" alt="">
+        <h2>Travel App</h2>
         <p>This is just some text</p>
+        
+        
     </div>
-
-    <div>
-        <h2>Portfolio</h2>
+    
+    <div class="project">
         <img src="images/portfolio-4.png" alt="">
+        <h2>Map of Favorite Spots</h2>
         <p>This is just some text</p>
+        
+        
     </div>
-    
-    <div>
-        <h2>Portfolio</h2>
+
+    <div class="project">
         <img src="images/portfolio-5.png" alt="">
+        <h2>Photo Gallery</h2>
         <p>This is just some text</p>
+        
+        
     </div>
-
-    <div>
-        <h2>Portfolio</h2>
+    
+    <div class="project">
         <img src="images/portfolio-6.png" alt="">
+        <h2>Calculator</h2>
         <p>This is just some text</p>
     </div>
-    
-    
-
+  </div>
 </main>
 
 <footer>
-    <h3>Contact</h3>
-    <nav>
+    <h3 id="contact">Contact</h3>
+    <p>If you are interested in contacting me you can reach me at &colon;</p>
+    <nav class="footer-nav">
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="tel:098-765-4321">Phone: 098-765-4321</a></li>
+            <li><a href="mailto:jacobdodge.dev@gmail.com">Email: jacobdodge.dev@gmail.com</a></li>
         </ul>
     </nav>
+    <nav  class="footer-nav2">
+        <h2 class="bottom-name">Jacob Dodge</h2>
+        <ul>
+            <li><a href="index.html">Back to Top</a></li>
+            
+        </ul>
+    </nav>
+
 </footer>
 
 </body>
