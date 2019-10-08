@@ -276,4 +276,18 @@ footer p{
        margin-right: .5em;
        margin-left: .5em;
    }
+
+   .back-to{
+       display: none;
+   }
+
+   .footer-nav2 ul {
+       display: inline-flex;
+   }
+   .footer-nav2 ul li{
+       padding-right: 1em;
+   }
+   .footer-nav2 {
+       padding-right: 0;
+   }
 }
