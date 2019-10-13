@@ -229,6 +229,11 @@ footer p{
     display: none;
 }
 
+.back-to {
+    display: contents;
+}
+
+
 /* Media Queries */
 
 @media (min-width: 768px){
@@ -294,6 +299,10 @@ footer p{
 
     .hide {
         display: none;
+    }
+
+    .back-to {
+        display: contents;
     }
 
 }
